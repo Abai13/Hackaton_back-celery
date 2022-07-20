@@ -12,3 +12,8 @@ drf-yasg
 gunicorn
 django-cors-headers
 whitenoise
+
+celery
+redis
+django-celery-beat
+django-celery-results

@@ -54,14 +54,14 @@ class User(AbstractBaseUser):
         self.save()
         return code
 
-    def send_activation_code(self):
-        activation_link = f'https://morning-depths-08273.herokuapp.com/account/activation/{self.activation_code}'
+    # def send_activation_code(self):
+    #     activation_link = f'https://morning-depths-08273.herokuapp.com/account/activation/{self.activation_code}'
     
-        send_mail(subject='Activation',
-                message=activation_link,
-                from_email=settings.EMAIL_HOST_USER,
-                recipient_list=[self.email],
-                fail_silently=False)
+    #     send_mail(subject='Activation',
+    #             message=activation_link,
+    #             from_email=settings.EMAIL_HOST_USER,
+    #             recipient_list=[self.email],
+    #             fail_silently=False)
 
     class Meta:
         verbose_name = 'Пользователь'
