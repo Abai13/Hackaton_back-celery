@@ -1,3 +1,2 @@
-
-
+команда для запуска celery :
 celery -A shop worker --beat -l info -S django
